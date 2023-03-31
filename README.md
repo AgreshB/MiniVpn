@@ -1,23 +1,14 @@
-# MiniVpn
-Created a mini VPN using OpenSSL and TUN/TAP interface. Programed in C.
-
-## Technologies Used
-- C
-- OpenSSL
-- Linux VMs
-
-
 # Intructions For running MiniVPN
-- Make sure to have OpenSSL installed on VMs or Linux machine.
-- Need to obtain certificates for server and client
-    - Followthe instructions in README_cert.md
-    - The server machine/VM needs to have these files:
-        - server.key
-        - server.crt
-        - shadow.txt
-    - The Client machine/VM needs to have these files:
-        - ca.crt
-- run make to compile the mainVPN code on both hosts
+
+- Make sure to have OpenSSL installed on both VMs.
+- Start both VMs
+- The server VM needs to have these files:
+    - server.key
+    - server.crt
+    - shadow.txt
+- The Client VM needs to have these files:
+    - ca.crt
+- run make to compile the mainVPN code on both VMs
 - Open 2 terminals , for each sever and client
 
 ## Follow the following steps in order (First Server then Client)
